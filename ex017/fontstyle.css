@@ -1,0 +1,13 @@
+@font-face {
+  font-family: zumb ;
+  src: url('font/Zombie Hunger.otf') format('opentype');
+}
+
+h1 {
+  font-family: 'zumb';
+  font-size: 10em;
+  color: #8e171b00;
+  background-image: linear-gradient(to top, #E97374,#944748,#470c0d, #8e171b);
+  background-clip: text ;
+  /*-webkit-text-fill-color: transparent;*/
+}

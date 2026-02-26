@@ -1,0 +1,39 @@
+@charset "utf-8";
+@font-face {
+  font-family: califa;
+  src: url("font/CALIFORNIA PERSONAL USE.ttf") format('Truetype');
+}
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, #4eece9,#36a7a5,#226867,#0d2827cc);
+    color: black;
+  }
+  
+  #principal{
+    font-family: 'califa';
+    font-size: 10em;
+    background-image: radial-gradient(circle, #d18f8f,#7c2525,#631d1d,#2a0d0d);
+    color: #22686700;
+    background-clip: text;
+    text-align: center;
+  }
+  h1 {
+    background-image: linear-gradient(to right, #ffc0cb,#87656b);
+    font-family: monospace;
+    font-size: 5em;   
+    text-align: center; 
+  }
+
+  h2 {
+    font-family: monospace;
+    color: #c8c9ce;
+    text-shadow: 1px 5px 10px #000000;
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 2em;
+    text-align: justify;
+  }
+
+  

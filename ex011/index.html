@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>adapitaçao de imagen</title>
+  <style>
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+    mark{
+      background-color: rgb(136, 224, 246);
+    }
+     </style>
+</head>
+<body>
+  <h1>TESTE DE IMAGFRGNS DINAMICAS</h1>
+  <p>interatividade por tamanho de tela ou aumentando e dimiuindo a aba do progama, deixando o site mas responsivo</p>    
+    <picture class="image">
+      <source media="(max-width:750px)" srcset="imagens/pequena.png" type="image/png">
+      <source media="(max-width:1050px)" srcset="imagens/media.png" type="image/png">
+      <img src="imagens/grande.png" alt="imagen Flexivel">
+    </picture>
+<h2>tocando um musica </h2>
+<p>tocamdo uma cusica tag audio</p>
+
+<audio src="Indigo.mp3" autoplay controls></audio>
+
+<p><mark><b>Mesmo audio uasando a tag source</b></mark></p>
+<audio preload="metadata" autoplay controls>
+  <source src="Indigo.mp3" type="audio/mp3">
+  <source src="Indigo.agg" type="audio/agg">
+  <source src="Indigo.wav" type="audio/wav"><!--não recomendado arquivo muito grande-->
+</audio>
+
+  </body>
+</html>

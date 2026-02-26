@@ -1,0 +1,73 @@
+ @charset "utf-8";
+    body {
+      background-image: url(fundo.jpg);
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    header > h1 {
+      background-image: linear-gradient(to bottom, #ff0000, #ffff00);
+      background-clip: text;
+      color:#00000000 ;
+    }
+    header {
+      text-align: center;
+      background-color: white;
+      padding-bottom: 10px;
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom:10px;
+      margin-left: 10px;
+    }
+    nav > a:hover {    
+      border-radius: 10px;
+      color: black; 
+      text-decoration: underline;
+    }
+    nav > a {
+      text-decoration: none;
+      font-size: 2em;
+      margin: 5px;      
+      background-image:linear-gradient(to bottom, #ff0000, #ffff00);
+      color: #690ceb;
+      
+    }
+    main {
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      padding: 0px 10PX ;
+      border-radius: 10px 0px;
+      box-shadow: 10px 11px 14px #00000080;     
+      background-color: #f0f8ff;
+    }
+    article {
+      padding: auto;
+      margin-bottom: 5px;
+    }
+    article > p {
+      padding: 10px;
+      background-color: rgb(194, 193, 193);
+      text-align: justify;
+      box-shadow: 8px 8px 6px 0px #00000082;
+    }
+
+    article > aside {
+      height: 40pox;
+      width: 200px;
+      background-image: linear-gradient(to right,#ff0000, #ffa500,  #ffff00) ;
+      text-align: right;
+      margin-left: -10px;
+
+    }
+
+    footer {
+      text-align: center;
+      margin:0;
+      padding: 1px;     
+      font-size: 1.5em;
+      font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+      color: white;
+      background-color: black;
+    }

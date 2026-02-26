@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    body {
+      background-image: radial-gradient(circle, #00006a, #3131e3da,#bb9cdf, #bb5e6df1,#E9BA48);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    main{
+      text-align: center;
+      width: 600px;
+      height: 600px;
+      background-color: #ffffff57;
+      padding: 5px;
+      border-radius: 1em;
+      
+    }
+    h1, h2 {
+      font-family: 'Work Sans''Times New Roman', 'san-serif';
+      font-weight: 900;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      position:absolute;
+      top: 290px;
+      left: 200px;
+    }
+    img {
+      transform: translate(50px, 50px);
+    }
