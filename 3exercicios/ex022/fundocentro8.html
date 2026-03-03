@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>centralização vertical</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    #conteiner{
+      height: 98vh;
+      background-color: blueviolet;
+
+      position: relative;
+      
+    }
+    #conteudo{
+      padding: 10px;
+      position: absolute;
+      background-color: aqua;
+      height: 200px;
+      width: 400px;
+
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    p {
+      border-radius: 5px;
+      background-color: #ffffff;
+      text-align: justify;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section id="conteiner">
+    <article id="conteudo">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ad reprehenderit possimus soluta, expedita ea vitae animi tempora esse laboriosam quod tenetur, eum perferendis! Molestiae modi nam quae. Ad, aspernatur!</p>
+    </article>
+  </section>
+  
+</body>
+</html>
