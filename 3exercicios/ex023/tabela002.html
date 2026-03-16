@@ -32,6 +32,17 @@
       background-color: black;
       color: #ff1f1f;
     }
+    #titulo{
+      padding: 3px;
+      text-align: center;
+      border: 4px dotted black;
+      border-bottom: 0;
+    }
+    #titulo:hover {
+      font-family: cursive, sans-serif;
+      color: #ff1f1f;
+      background-image: linear-gradient(to right, black, gray);
+    }
   </style>
   <title>anotomia de tabelas</title>
 </head>
@@ -40,6 +51,7 @@
 
 <!--A importancia da semantica para o html5 ficA bem clara aque nas tabelas onde cabeça e cabeça/ corpo e corpo/ e pé e pé-->
   <table>
+    <caption id="titulo">Pessoas por estado</caption>
 <!--cabeça/cabeça-->
     <thead>
       <tr>
