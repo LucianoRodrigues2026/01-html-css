@@ -7,6 +7,10 @@
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    tbody tr:nth-child(even) {
+      background-color: lightblue;
+    }
+
     table {
       width: 50vw;
       border: 2px solid rgb(1, 1, 62);
@@ -21,7 +25,7 @@
       background-color: black;
     }
     td {
-      padding: 10px;
+      padding: 5px;
       border: 2px solid rgb(1, 1, 62);
       
     }
@@ -33,10 +37,11 @@
       color: #ff1f1f;
     }
     #titulo{
+      background-color: darkgray;
       padding: 3px;
       text-align: center;
-      border: 4px dotted black;
-      border-bottom: 0;
+     
+      border:1px solid darkblue;
     }
     #titulo:hover {
       font-family: cursive, sans-serif;
@@ -51,15 +56,15 @@
 
 <!--A importancia da semantica para o html5 ficA bem clara aque nas tabelas onde cabeça e cabeça/ corpo e corpo/ e pé e pé-->
   <table>
-    <caption id="titulo">Pessoas por estado</caption>
+    <caption id="titulo">População por Estado</caption>
 <!--cabeça/cabeça-->
     <thead>
       <tr>
-        <th>Estsdo</th>
-        <th>População</th>
+        <th scope="col">Estsdo</th>
+        <th scope="col">População</th>
       </tr>
     </thead>
-<!--corpo/corpo-->
+<!--corpo/corpo de Dados-->
     <tbody>
           <tr>
             <td>São Paulo</td>
@@ -202,7 +207,7 @@
 <!--pé/pé-->
     <tfoot>
       <tr>
-        <th>soma da População</th>
+        <th scope="col">Soma da População</th>
         <td class="num"><strong>213.421.037</strong>	</td>
       </tr>
 
