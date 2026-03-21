@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas 15</title>
+  <style>
+    table {
+      width: 400px;
+      border-collapse: collapse;
+      border: 1PX solid black;
+      th, td {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      th {
+        color: rgb(63, 63, 63);
+      }
+    }
+    col.nome {
+      background-image: linear-gradient(to right, blue, rgb(44, 44, 45));
+    }
+    col.idade {
+      background-color: aqua;
+    }
+    col.sexo {
+      background-image: linear-gradient(to left, pink, red);
+    }
+  </style>
+</head>
+<body>
+  <h1>Agrupamento de colunas</h1>
+  <table>
+    <colgroup>
+      <col class="nome">  
+      <col class="sexo">
+      <col class="idade" span="2">
+      <col class="profissao">  
+    </colgroup>
+    <caption>Colunas coloridas</caption>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Profissão</th>
+    </tr>
+    <tr>
+      <td>Ana</td>
+      <td>F</td>
+      <td>25</td>
+      <td>Job</td>
+    </tr>
+    <tr>
+      <td>Amanda</td>
+      <td>F</td>
+      <td>29</td>
+      <td>food maker</td>
+    </tr>
+    <tr>
+      <td>Mario</td>
+      <td>M</td>
+      <td>52</td>
+      <td>Advogado</td>
+    </tr>
+    <tr>
+      <td>João</td>
+      <td>M</td>
+      <td>25</td>
+      <td>Jogador de futebol</td>
+    </tr>
+    <tr>
+      <td>Claudio</td>
+      <td>m</td>
+      <td>35</td>
+      <td>Pedreiro</td>
+    </tr>
+    <tr>
+      <td>Ana Maria</td>
+      <td>F</td>
+      <td>25</td>
+      <td>Modelo</td>
+    </tr>
+    <tr>
+      <td>Fernada</td>
+      <td>F</td>
+      <td>25</td>
+      <td>Professora</td>
+    </tr>
+
+  </table>
+  
+</body>
+</html>
