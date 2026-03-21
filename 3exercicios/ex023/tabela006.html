@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela 06</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    h1 {
+      color: rgba(0, 0, 0, 0);
+      text-align: center;
+      font-family:cursive;
+      font-variant: small-caps;
+      font-size: 7vw;
+      background-image: url('city-pixel.jpg');
+      background-size: cover;
+      background-clip: text;
+      
+    }
+    h3 {
+      background-image: linear-gradient(to right, #00fff2, transparent);
+      text-indent: 10px;
+    }
+    p {
+      text-align: justify;
+      text-indent: 30px;
+      padding: 10px;
+      text-shadow: 10px 10xp 20px black;
+    }
+    table {
+      border: 3px solid black;
+      border-collapse: collapse;
+    
+      th, td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+    }
+    caption {
+      text-align: left;
+      padding: 5px;
+      font-size: 2em;
+      font-variant: small-caps;
+      text-decoration: underline;      
+    }
+    th {
+      background-color: #ff8c8c;
+    }
+    tr:nth-child(even) {
+      background-color: lightgray;
+    }
+    
+    td:nth-child(3n){
+      background-color: rgb(209, 208, 208);
+     
+      
+    }
+    tr td.recorde:hover {
+      background-color: rgb(255, 0, 0);
+      transform: translate(10px, 10px);
+      background-image: url('recorde.png');
+      background-size: cover;
+    }
+
+    div#conteiner{
+      margin: auto;
+      width: 75vw;
+      overflow-x: auto;
+    }
+    main {
+      margin: auto;
+      width: 80vw;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Exercicio 06 tabelas responsivas</h1>
+    <h3>Texto de Teste</h3>
+    <p>
+    frase desnesesaria.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam magni eligendi unde quas enim tempore repellat qui excepturi sint perspiciatis adipisci deserunt ducimus, voluptatem praesentium pariatur accusantium officiis aut perferendis?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit voluptatem sapiente temporibus ab atque? Quam, corrupti distinctio, doloremque quisquam necessitatibus, aliquam vero sint quibusdam fugit explicabo aliquid blanditiis amet.
+    </p>
+    <div id="conteiner">
+      <table>
+        <thead>
+          <caption>Vendas do Ano </caption>
+          <tr>
+            <th colspan="col">Produtos </th>
+            <th colspan="col">Janeiro</th>
+            <th colspan="col">Fevereiro</th>
+            <th colspan="col">Março</th>
+            <th colspan="col">Abril</th>
+            <th colspan="col">Maio</th>
+            <th colspan="col">Junho</th>
+            <th colspan="col">Julho</th>
+            <th colspan="col">Agosto</th>
+            <th colspan="col">Setenbro</th>
+            <th colspan="col">Outubro</th>
+            <th colspan="col">Novembro</th>
+            <th colspan="col">Dezembro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="row">Franta uva</td>
+            <td class="recorde">500</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Laranja</td>
+            <td class="recorde">500</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Maçã verde</td>
+            <td>100</td>
+            <td>100</td>
+            <td class="recorde">500</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td class="recorde">500</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Maracuja</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td class="recorde">500</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Manga</td>
+            <td>100</td>
+            <td class="recorde">500</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Abacaxi</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Morango</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Cola</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Guarana</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Café</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td rowspan="row">Franta Melão</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur voluptatibus sit veniam non nam asperiores neque, corporis temporibus, culpa eius voluptate harum adipisci. Veritatis, deserunt corporis dignissimos esse laudantium a?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro illo fugiat esse voluptas dolorum voluptatum soluta consectetur at cupiditate perferendis deserunt, nisi, numquam quibusdam iste hic iure est et ex!
+    </p>
+  </main>
+</body>
+</html>
