@@ -4,12 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>formularios</title>
+  <style>
+    h1, p {
+      font-variant: small-caps;
+    }
+    p input {
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+
+    input.sub:hover {
+      height: 50px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      transition: none;
+      border: 3px solid white;
+    }
+
+    input.sub {
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.542);
+      background-image: linear-gradient(to left, red, yellow);
+    }
+  </style>
 </head>
 <body>
-  <form>
-    
-    <p>nome: <input type="text" name="nome" id="nome"></p>
-    <p>sobre nome: <input type="text" name="snome" id="snome"></p>
+  <h1>Formulario de Tests</h1>
+  <form action="cadrasto.php" autocomplete="off" method="post">
+
+    <p><label for="inome">Nome:</label>
+      <input type="text" name="nome" id="inome"></p>
+
+    <p><label for="isobrenome">Sobrenome: </label>
+      <input type="text" name="sobrenome" id="isobrenome"></p>
+    <input type="submit" value="Enviar" class="sub">
   </form>
   
 </body>
