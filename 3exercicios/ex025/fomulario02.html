@@ -10,8 +10,11 @@
       padding: 0;
     
     }
+    ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
     body {
-      font-family: Arial, Helvetica, sans-serif;
       font-variant: small-caps;
       position: relative;
     }
@@ -19,58 +22,124 @@
       position:absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, 19%);
+      transform: translate(-50%, 11%);
 
       padding: 40px;
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.588);
-      width: 50vw;
-      height: 70vh;
-      line-height: 30px;
+      max-width: 300px;
+      max-height: 600px;
+      min-width: 300px;
+      min-height: 600px;
+      line-height: 40px;
     }
 
 
     #titulo {
       background-image: url('imagens/fundo-escola.jpg');
       background-repeat: no-repeat;
+      background-position: bottom center;
       background-size: cover;
+      
+      margin-top: -40px;
+      margin-left: -40px;
+      margin-right: -40px;
+      border-radius: 10px 10px 0px 0px;
+      padding: 30px 20px 100px 117px;
+    }
+    h1 {
+      border-radius: 10px;
+      color: rgb(20, 11, 0);
+      background-color: rgba(245, 245, 220, 0.466);
       font-weight: lighter;
       text-align: center;
-      font-size: 1em;
-      margin-top: -40px;
-      margin-left: -1px;
-      margin-right: -1px;
-      padding: 20px 20px 20px 100px;
+      font-size: 2em;
+    }
+    footer p {
+      font-weight: bold;
+      position: relative;
+      top: 126px;
+      padding: 10px;
+      margin-left: -40px;
+      margin-right: -40px;
+      background-color: #B3EBF2;
+      border-radius: 0px 0px 10px 10px;
+      text-align: center;
+    }
+    #envLinp {
+      display: flex;
+      justify-content:right;
+      
+    }
+    #enviar:hover, #limpar:hover{
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #enviar{
+      padding: 10px;
+      margin-top: 5px;
+      width: 80px;
+      background-color: #B3EBF2;
+      border: 2px solid #B3EBF2;
+      margin-right: 4px;
+    }
+    #limpar {
+      padding: 10px;
+      margin-top: 5px;
+      width: 80px;
+      background-color: #B3EBF2;
+      border: 2px solid #B3EBF2;
+    }
+    section {
+      position: relative;
+      top: 20px;
     }
     
   </style>
 </head>
 <body>
-  <form action="cadrasto.js" method="get">
+  <form action="cadrasto.js" method="get" autocomplete="on">
     <div id="conteiner">
       <div id="titulo">
-        <h1>Formulario de testes</h1>
+        <h1>Formulario Avaliativo</h1>
       </div>
   
-      <div id="nome">
-        <label for="Nome">Nome: </label>
-        <input type="text" name="nome" id="Nome">
-      </div>
+      <section>
+        <div id="nome">
+          <label for="Nome">Nome do aluno: </label>
+          <input type="text" name="nome" id="Nome" required placeholder="Nome" minlength="4" maxlength="15">
+        </div>
+        <div id="Nota">
+         <label for="nota">Nota:</label>
+         <input type="number" name="Nota" id="nota" required placeholder="Nota" min="0" max="10" step="0.1">
+        </div>
+        <div>
+          <label for="avaliacao">Avaliação:</label>
+          <input type="number" name="avaliacao" id="avaliacao" required placeholder="1ª2ª3ª4ª Avaliação" min="1" max="4" size="6">
+        </div>
+        
+        <div id="mes">
+          <label for="Mes">Período letivo:</label>
+          <input type="month" name="mes" id="Mes" required value="Março de 2026">
+        </div>
+        <div id="Data">
+          <label for="data">Data:</label>
+          <input type="date" name="data" id="data" required virtualkeyboardpolicy="true" value="10/10/10" >
+        </div>
+        <div id="hora">
+          <label for="horario">Horário da Avaliacão:</label>
+          <input type="time" name="hora" id="hora" required virtualkeyboardpolicy="true" value="00:00">
+        </div>
+        <div id="envLinp">
+          <input type="submit" value="Enviar" id="enviar">
+          <input type="reset" value="Limpar" id="limpar">
+        </div>
+      </section>
 
-      <div id="Nota">
-       <label for="nota">Nota:</label>
-       <input type="number" name="Nota" id="nota">
-      </div>
-      
-      <div id="mes">
-        <label for="Mes">Mês:</label>
-        <input type="month" name="mes" id="Mes">
-      </div>
-
-      <div id="Data">
-        <label for="data">Data:</label>
-        <input type="date" name="data" id="data">
-      </div>
+      <footer>
+        <p>escola samariana ficticio</p>
+      </footer>
 
     </div>
   </form>
