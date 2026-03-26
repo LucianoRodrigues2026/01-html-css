@@ -4,9 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario02</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-variant: small-caps;
+      position: relative;
+    }
+    #conteiner {
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 19%);
+
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.588);
+      width: 50vw;
+      height: 70vh;
+      line-height: 30px;
+    }
+
+
+    #titulo {
+      background-image: url('imagens/fundo-escola.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-weight: lighter;
+      text-align: center;
+      font-size: 1em;
+      margin-top: -40px;
+      margin-left: -1px;
+      margin-right: -1px;
+      padding: 20px 20px 20px 100px;
+    }
+    
+  </style>
 </head>
 <body>
-  <h1>Formulario de testes</h1>
+  <form action="cadrasto.js" method="get">
+    <div id="conteiner">
+      <div id="titulo">
+        <h1>Formulario de testes</h1>
+      </div>
+  
+      <div id="nome">
+        <label for="Nome">Nome: </label>
+        <input type="text" name="nome" id="Nome">
+      </div>
+
+      <div id="Nota">
+       <label for="nota">Nota:</label>
+       <input type="number" name="Nota" id="nota">
+      </div>
+      
+      <div id="mes">
+        <label for="Mes">Mês:</label>
+        <input type="month" name="mes" id="Mes">
+      </div>
+
+      <div id="Data">
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data">
+      </div>
+
+    </div>
+  </form>
   
 </body>
 </html>
