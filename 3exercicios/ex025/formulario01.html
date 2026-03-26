@@ -12,17 +12,17 @@
 </head>
 <body>
   <h1>Formulario de testes</h1>
-  <form action="cadrasto.php" method="GET" autocomplete="on">
+  <form action="cadrasto.js" method="GET" autocomplete="on">
 
     <p><label for="usuario">Usuario:</label>
-    <input type="text" name="name" id="usuario" required></p>
+    <input type="text" name="name" id="usuario" required minlength="4"  maxlength="10" placeholder="Usuario" size="10" autocomplete="username"></p>
     <p>
       <label for="Senha">Senha:</label>
-     <input type="password" name="password" id="Senha" required>
+     <input type="password" name="password" id="Senha" required minlength="4" maxlength="8" placeholder="senha de 4 digitos" size="12" autocomplete="current-password">
     </p>
     <p>
-     <input type="submit" value="Enviar"> 
-     <input type="reset" value="Limpar">
+     <input type="submit" value="Enviar" >
+     <input type="reset" value="Limpar" >
     </p>
 
   </form>
