@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario 05</title>
+</head>
+<body>
+  <form action="cadrasto.js" method="post" autocomplete="off">
+    <p>
+      <label for="Cor">Escolha sua cor:</label>
+      <input type="color" name="cor" id="Cor" value="blue">
+    </p>
+    <p>
+      <label for="Volime">Volume:</label>
+      <input type="range" name="volume" id="Volume" min="1" max="10" value="5">
+    </p>
+    <p>
+      <label for="foto">Envie uma foto:</label>
+      <input type="file" name="fotos" id="foto" accept="image/*">
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+
+  </form>
+  
+</body>
+</html>
