@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fora de formulario</title>
+</head>
+<body>
+  <h1>Fora da TAG form/formulario</h1>
+  <p>
+    <form action="cadrasto.js" method="get" autocomplete="on">
+      <label for="estado">Estado: </label>
+      <select name="Estado" id="estado" required >
+        <option value="pa">Pará</option>
+        <option value="sc">Santa Catarina</option>
+        <option value="sp">São Paulo</option>
+        <option value="go">Goiás</option>
+      </select>
+  </p>
+  <p>
+    <label for="prof">Profissão: </label>
+    <input type="text" placeholder="Sua PROF..." list="lista" id="prof" required>
+    <datalist id="lista">
+      <option>Programador</option>
+      <option>Desenvolvedor</option>
+      <option>Técnico</option>
+      <option>Engenheiro Elétrico</option>
+      <option>Cosinheiro</option>
+    </datalist>
+  </p>
+  <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+  </p>
+  </form>
+  
+</body>
+</html>
