@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*para todas as versoes*/
+
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #233eff;
+
+}
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  color: antiquewhite;
+  padding: 10px;
+}
