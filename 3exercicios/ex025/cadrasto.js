@@ -1,5 +1,2 @@
 //dados enviados com sucesso//
-function cadrasto(){
-    var usuario = document.getElementById("usuario").value;
-    var senha = document.getElementById("senha").value;
-}
+oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)"
