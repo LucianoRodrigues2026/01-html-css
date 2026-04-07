@@ -4,13 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test de medias queries</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
   <link rel="stylesheet" href="style/style.css" media="all">
   <link rel="stylesheet" href="style/telasG.css">
 </head>
 <body>
   <header>
     <h1>Teste de Medias Queries </h1>
-    <menu>
+
+    <span id="menuburger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+    <menu id="menulinha">
       <ul>
         <li><a href="#">Opition 1</a></li>
         <li><a href="#">Opition 2</a></li>
@@ -48,14 +54,18 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus corrupti suscipit deleniti quae officiis ad modi quo ipsam exercitationem, iste mollitia quos, distinctio facilis ex reprehenderit magni! Inventore, ullam quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, magni. Explicabo excepturi labore totam, nobis impedit eligendi aliquid obcaecati repudiandae architecto vero alias sit quod, voluptate deleniti sed maiores culpa!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laborum cupiditate vel totam. Vel recusandae, incidunt tempora harum molestias fugit ducimus eum quas similique nihil dicta quo facilis sit necessitatibus.
       </p>
-
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus corrupti suscipit deleniti quae officiis ad modi quo ipsam exercitationem, iste mollitia quos, distinctio facilis ex reprehenderit magni! Inventore, ullam quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, magni. Explicabo excepturi labore totam, nobis impedit eligendi aliquid obcaecati repudiandae architecto vero alias sit quod, voluptate deleniti sed maiores culpa!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laborum cupiditate vel totam. Vel recusandae, incidunt tempora harum molestias fugit ducimus eum quas similique nihil dicta quo facilis sit necessitatibus.
-      </p>
     </article>
   </main>
   
+  <script>
+    function clickMenu(){
+      const menu = document.getElementById('menulinha');
+      if(menu.style.display == 'block'){
+        menu.style.display = 'none';
+      }else{
+        menu.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>

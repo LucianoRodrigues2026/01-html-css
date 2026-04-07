@@ -14,15 +14,16 @@ header {
   color: #fff;
 
 }
-menu{
+menu#menulinha{
   width: 100vw;
+  display: none;
   
 }
 li{    
-    background-color: black;
+    background-color: rgb(131, 131, 131);
     border-top: 1px solid #fff;
     padding: 5px;
-    display: block;
+
     list-style-type: none;
     
     a{
@@ -33,12 +34,23 @@ li{
     }
   }
 li:hover {
+  cursor: pointer;
   background-color: #fff;
   text-decoration: underline;
   a{
     color: black;
   }
 }
+#menuburger{
+  background-color: rgb(83, 82, 83);
+  display:  block;
+  cursor: pointer;
+}
+#menuburger:hover{
+  background-color: #fff;
+  color: black;
+}
+
 main {
   border-radius: 10px;
   padding: 10px;
