@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style/style.css" media="all">
   <link rel="stylesheet" href="style/telasG.css">
 </head>
-<body>
+<body onresize="tamanhoTela()">
   <header>
     <h1>Teste de Medias Queries </h1>
 
@@ -24,7 +24,6 @@
         <li><a href="#">Opition 4</a></li>
         <li><a href="#">Opition 5</a></li>
         <li><a href="#">Opition 6</a></li>
-        <li><a href="#">Opition 7</a></li>
       </ul>
     </menu>
 
@@ -57,7 +56,20 @@
     </article>
   </main>
   
+  
   <script>
+    function tamanhoTela(){
+      const menu = document.getElementById('menulinha')
+      if (window.innerWidth >= 600){
+        menu.style.display = 'block'
+      }else{
+        menu.style.display = 'none'
+      }
+    }
+    
+    
+
+
     function clickMenu(){
       const menu = document.getElementById('menulinha');
       if(menu.style.display == 'block'){
@@ -67,5 +79,6 @@
       }
     }
   </script>
+
 </body>
 </html>

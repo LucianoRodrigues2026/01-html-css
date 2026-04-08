@@ -4,8 +4,11 @@
     margin: 0;
     padding: 0;
 }
+::-webkit-scrollbar {
+  width: 0px;
+}
 html{
-  background-color: black;
+  background-color: rgb(162, 162, 162);
 }
 header {
   background-color: #7a7979;
