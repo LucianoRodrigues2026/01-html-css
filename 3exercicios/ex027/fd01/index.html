@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    div.conteiner{
-      border-radius: 10px;
-      background-color: lightcoral;
-      display: flex;
-      flex-direction: column;
-
+    ::-webkit-scrollbar{
+      width: 0;
+    }
+    strong {
+      color: red;
     }
     div.items{
       background-color: chocolate;
@@ -18,12 +17,26 @@
       width: 60px;
       padding: 20px;
       margin-bottom: 20px;
+      margin: auto;
+  
+    }
+    #red{
+      background-color: brown;
+    }
+
+    div.conteiner{
+      border-radius: 10px;
+      background-color: lightcoral;
+      display: flex;
+      padding: 10px;
+
     }
   </style>
 </head>
 <body>
+  <h1>flex-direction <strong>Auto</strong> (row)</h1>
   <div class="conteiner">
-    <div class="items">A</div>
+    <div class="items"  id="red" >A</div>
     <div class="items">B</div>
     <div class="items">C</div>
     <div class="items">D</div>
@@ -31,6 +44,7 @@
     <div class="items">F</div>
     <div class="items">G</div>
   </div>
+
 
   
 </body>

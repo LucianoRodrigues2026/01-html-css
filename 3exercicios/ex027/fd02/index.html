@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    ::-webkit-scrollbar{
+      width: 0;
+    }
+    strong {
+      color: red;
+    }
+    div.items{
+      background-color: chocolate;
+      border-radius: 10px;
+      flex: auto;
+      width: 60px;
+      padding: 20px;
+      margin-bottom: 20px;
+      margin: auto;
+  
+    }
+    #red{
+      background-color: brown;
+    }
+
+    div.conteiner{
+      border-radius: 10px;
+      background-color: lightcoral;
+      display: flex;
+      padding: 10px;
+
+    }
+    div.conteiner1{
+      border-radius: 10px;
+      background-color: lightcoral;
+      display: flex;
+      padding: 10px;
+      flex-direction: row-reverse;
+
+    }
+    div.conteiner2{
+      border-radius: 10px;
+      background-color: lightcoral;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+
+    }
+    div.conteiner3{
+      border-radius: 10px;
+      background-color: lightcoral;
+      display: flex;
+      padding: 10px;
+      flex-direction: column-reverse;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>flex-direction <strong>Auto</strong> (row)</h1>
+  <div class="conteiner">
+    <div class="items"  id="red" >A</div>
+    <div class="items">B</div>
+    <div class="items">C</div>
+    <div class="items">D</div>
+    <div class="items">E</div>
+    <div class="items">F</div>
+    <div class="items">G</div>
+  </div>
+
+  <h1>flex-direction <strong>row-reverse</strong></h1>
+  <div class="conteiner1">
+    <div class="items" id="red">A</div>
+    <div class="items">B</div>
+    <div class="items">C</div>
+    <div class="items">D</div>
+    <div class="items">E</div>
+    <div class="items">F</div>
+    <div class="items">G</div>
+  </div>
+
+  <h1>flex-direction <strong>colum</strong></h1>
+  <div class="conteiner2">
+    <div class="items" id="red">A</div>
+    <div class="items">B</div>
+    <div class="items">C</div>
+    <div class="items">D</div>
+    <div class="items">E</div>
+    <div class="items">F</div>
+    <div class="items">G</div>
+  </div>
+
+  <h1>flex-direction <strong>colum-reverse</strong></h1>
+  <div class="conteiner3">
+    <div class="items" id="red">A</div>
+    <div class="items">B</div>
+    <div class="items">C</div>
+    <div class="items">D</div>
+    <div class="items">E</div>
+    <div class="items">F</div>
+    <div class="items">G</div>
+  </div>
+
+  
+</body>
+</html>
