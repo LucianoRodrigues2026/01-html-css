@@ -17,11 +17,21 @@ body {
     p {
       text-align: justify;
     }
-    button{
-       width: 100px;
-       height: 40+5px;
-       border-radius: 20%; 
+    .botao{
+      cursor: pointer;
+
+       width: 200px;
+       border-radius: 20px; 
        border-color: turquoise;
        border-width: 5px;
        background-color: darkslategrey;
+       p {
+        text-align: center;
+       }
+       a {
+        text-decoration: none;
+       }
+    }
+    a:hover {
+      text-decoration: underline;
     }
