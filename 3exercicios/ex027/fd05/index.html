@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>centralizando</title>
+</head>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body#superPai {
+    background-color: #2a2727;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main#pai {
+    width: 400px;
+    height: 400px;
+    background-color: #ffe4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  section#filho {
+    background-color: cadetblue;
+    text-align: justify;
+    width: 200px;
+    
+    display: flex;
+    align-items: center;
+    p {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      overflow: hidden;
+      font-weight: bolder;
+      font-variant: small-caps;
+      font-size: 3em;
+      text-indent: 30px;
+      color: firebrick;
+    }
+  }
+</style>
+<body id="superPai">
+  <main id="pai">
+    <section id="filho">
+      <p>centralisando com justfy-content & align-items</p>
+    </section>
+
+  </main>
+  
+</body>
+</html>
