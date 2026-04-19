@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    ::-webkit-scrollbar{
+      width: 0;
+    }
+    strong {
+      color: red;
+    }
+    div.conteiner{
+      height: 100px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+     
+      background-color: lightcoral;
+      padding: 10px;
+
+    }
+    div.items{
+      background-color: chocolate;
+   
+    }
+
+    #red{
+      background-color: #ff0000;
+    }
+    #blue{
+      background-color: #0000ff;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <h1>flex-direction <strong>Auto</strong> (row)</h1>
+  <div class="conteiner">
+    <div class="items"  id="red" >A</div>
+    <div class="items">B</div>
+    <div class="items">C</div>
+    <div class="items">D</div>
+    <div class="items">E</div>
+    <div class="items">F</div>
+    <div class="items" id="blue">G</div>
+  </div>
+
+
+  
+</body>
+</html>
