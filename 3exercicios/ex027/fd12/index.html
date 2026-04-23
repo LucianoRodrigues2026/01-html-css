@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align-content</title>
+  <style>
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body{
+      h1{
+        padding:10px;
+        text-indent: 30px;
+      }
+      strong {
+      color: #ff0000;
+      }
+    }
+    .pai {      
+      background-color: rgba(128, 255, 0, 0.532);
+
+      display: flex;
+      flex-flow: row nowrap;
+   
+    }
+
+    .filho{
+      /*padrao*/
+
+      border: 1px solid black;
+      background-color: darkorchid;
+      padding: 5px;
+      text-align: center;
+
+      /*flex-basis: 150px;
+      flex-grow: 0;
+      flex-shrink: 1;*/
+
+      flex: 0 1 150px;
+      
+    }
+    .filho1{
+
+      border: 1px solid black;
+      background-color: darkorchid;
+      padding: 5px;
+      text-align: center;
+      /*flex-basis: 150px;*/
+      
+      &#i0{
+      /*flex-grow: 0;
+      flex-shrink: 1;*/
+      flex: 0 1 150px;
+
+      }
+
+      &#i1{
+      /*flex-grow: 2;
+      flex-shrink: 0;*/
+      flex: 2 0 150px;
+
+      }
+      
+      &#i2{
+      /*flex-grow: 1;
+      flex-shrink: 2;*/
+      flex: 1 2 150px;
+
+      }
+    }
+    .filho2{
+
+      border: 1px solid black;
+      background-color: darkorchid;
+      padding: 5px;
+      text-align: center;
+      flex-basis: 150px;
+      
+      &#i0{
+      /*flex-grow: 0;
+      flex-shrink: 1;*/
+      flex: 0 1 150px;
+
+      }
+
+      &#i1{
+      /*flex-grow: 1;
+      flex-shrink: 0;*/
+      flex: 1 0 150px;
+
+      }
+      
+      &#i2{
+      /*flex-grow: 2;
+      flex-shrink: 1;*/
+      flex: 2 1 150px;
+
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>flex <strong> flex-grow + flex-shrink + flex-basis</strong></h1>
+  <main>
+    <section class="pai">
+      <div class="filho" style="background-color: brown;" >teste de empacotamento 1</div>
+      <div class="filho" >teste de empacotamento 2 um pouco maior</div>
+      <div class="filho" >22222222 2222222</div>
+      <div class="filho" >3</div>
+      <div class="filho" style="background-color: aqua;" >teste de empacotamento 3 muito maior do que esperado</div>
+    </section>
+  </main>
+
+  <h1>flex <strong> flex-grow + flex-shrink + flex-basis</strong></h1>
+  <main>
+    <section class="pai">
+      <div class="filho1" style="background-color: brown;" id="i0">teste de empacotamento 1</div>
+      <div class="filho1" id="i1">teste de empacotamento 2 um pouco maior</div>
+      <div class="filho1"id="i2">3</div>
+      
+    </section>
+  </main>
+
+  <h1>flex <strong> flex-grow + flex-shrink + flex-basis</strong></h1>
+  <main>
+    <section class="pai">
+      <div class="filho2" style="background-color: brown;" id="i0" >teste de empacotamento 1</div>
+      <div class="filho2" id="i1" >teste de empacotamento 2 um pouco maior</div>
+      <div class="filho2" id="i2" style="background-color: aqua;" >teste de empacotamento 3 muito maior do que esperado</div>
+    </section>
+  </main>
+  
+</body>
+</html>
