@@ -1,0 +1,17 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+section#menu {
+  background-color: darkslategray;
+  display: flex;
+}
+.botaomenu {
+  border: 1px solid black;
+  padding: 10px;
+  color: aliceblue;
+  list-style: none;
+  display: block;
+}
