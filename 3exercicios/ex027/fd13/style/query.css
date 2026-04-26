@@ -40,6 +40,20 @@ section#menu {
   color: black;
   background-color: azure;
 }
+nav {
+  display: none;
+}
+#menu-burg {
+  color: #fff;
+  background-color: cadetblue;
+  cursor: pointer;
+
+}
+#menu-burg:hover {
+  color: black;
+  background-color: greenyellow;
+}
+
 main {
   width: 90vw;
   height: 300px;
