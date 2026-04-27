@@ -35,7 +35,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   nav#menulinha {
     display: flex;
@@ -144,7 +144,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   nav#menulinha {
     display: flex;
