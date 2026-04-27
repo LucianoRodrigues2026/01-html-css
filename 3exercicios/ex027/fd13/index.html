@@ -5,51 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/estlo.css">
   <link rel="stylesheet" href="style/query.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+
   <title>menu responcivo</title>
 </head>
 <body>
-  <section id="menu">
+  <header id="menu">
     <h1 id="h1menu">Meu site</h1>
-    <span class="material-symbols-outlined" id="menu-burg">menu</span>
+    
     <nav id="menulinha">
-      <ul>
-        <li class="botaomenu">opção 0</li>
-        <li class="botaomenu">opção 1</li>
-        <li class="botaomenu">opção 2</li>
-        <li class="botaomenu">opção 3</li>
-        <li class="botaomenu">opção 4</li>
-        <li class="botaomenu">opção 5</li>
-      </ul>
+        <a href="#" class="botaomenu" id="it0">opção 0</a>
+        <a href="#" class="botaomenu" id="it1">opção 1</a>
+        <a href="#" class="botaomenu" id="it2">opção 2</a>
+        <a href="#" class="botaomenu" id="it3">opção 3</a>
+        <a href="#" class="botaomenu" id="it4">opção 4</a>
+        <a href="#" class="botaomenu" id="it5">opção 5</a>
+
     </nav>
-  </section>
+  </header>
   <main>
     <h1 id="h1test">Test FlexBox</h1>
     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero necessitatibus corporis provident enim repellendus vero explicabo molestiae atque quibusdam debitis, rem aspernatur quos consequuntur itaque veritatis consectetur vel non quaerat</p>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed tempore, laboriosam quaerat dolorem amet eos vel quae. Consequatur, impedit qui quos blanditiis ipsum in. Dicta itaque dolorum vitae ullam.</p>
   </main>
 
-  <script>
-    function tamanhoTela(){
-      const menu = document.getElementById('menulinha')
-      if (window.innerWidth >= 600){
-        menu.style.display = 'block'
-      }else{
-        menu.style.display = 'none'
-      }
-    }
-    
-    
-    function clickMenu(){
-      const menu = document.getElementById('menulinha');
-      if(menu.style.display == 'block'){
-        menu.style.display = 'none';
-      }else{
-        menu.style.display = 'block';
-      }
-    }
-  </script>
-    
   
 </body>
 </html>

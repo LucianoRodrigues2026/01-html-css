@@ -4,6 +4,11 @@
   margin: 0px;
   padding: 0px;
 }
+@media screen and (max-width:599px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
 body {
   background-color: grey;
   display: flex;
@@ -16,7 +21,7 @@ body {
   color: #fff;
   font-variant: small-caps;
 }
-section#menu {
+header#menu {
   width: 100vw;
   background-color: darkslategray;
   display: flex;
@@ -40,9 +45,11 @@ section#menu {
   color: black;
   background-color: azure;
 }
-nav {
-  display: none;
-}
+
+a.botaomenu{
+    text-decoration: none;
+  }
+
 #menu-burg {
   color: #fff;
   background-color: cadetblue;
@@ -72,5 +79,10 @@ main {
   #h1test {
     text-align: center;
     font-variant: small-caps;
+    flex: auto;
+  }
+  p {
+    flex: 1 1;
+  }
 }
 }
