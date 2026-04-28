@@ -18,6 +18,7 @@ body {
   font-family: sans-serif;
 }
 #h1menu {
+  padding: 12px;
   color: #fff;
   font-variant: small-caps;
 }
@@ -28,6 +29,18 @@ header#menu {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+}
+span {
+  display: block;
+  background-color: rgb(43, 54, 23);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+nav {
+   display: none;
 }
 .botaomenu {
   width: 90vw;
