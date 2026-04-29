@@ -9,25 +9,37 @@ section#centro {
   
   background-color: rgb(155, 155, 156);
 }
-.conteiner{
+#conteiner{
+  display: flex;
+  flex-flow: row wrap-reverse;
+  padding: 10px;
+
+}
+#conteiner1{
   display: flex;
   flex-flow: row wrap;
+  padding: 10px;
 
 }
 .text {
   border: 1px dotted ;
   flex:  1 500;
+  text-align: justify;
+  text-indent: 30px;
 }
 div.fotoinca{
+  margin: 10px;
+  background-image: url('../img/paisagem.jpeg');
+  background-size: cover;
+  flex: 1 0 150px;
 
-  width: 200px;
-  height: 300px;
-  background-image: url('../img/inca.jpg');
+}
+div#video{
+  display:flex;
+  background-color: lightgray;
   background-size: cover;
 }
-div.fotopc{
-  width: 200px;
-  height: 300px;
-  background-image: url('../img/pc.jpg');
-  background-size: cover;
+#video > iframe {
+  margin: 10px;
+  flex: 1 1 560;
 }
