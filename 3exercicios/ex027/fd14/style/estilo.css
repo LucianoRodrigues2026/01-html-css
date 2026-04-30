@@ -4,7 +4,22 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-indent: 10px;
+  h1{
+    text-align: center;
+  }
 }
+main {
+  width: 100vw;
+  height: 100vh;
+}
+h1, h2, p {
+  padding: 10px;
+  p {
+    text-align: justify;
+  }
+}
+
 section#centro {
   
   background-color: rgb(155, 155, 156);
