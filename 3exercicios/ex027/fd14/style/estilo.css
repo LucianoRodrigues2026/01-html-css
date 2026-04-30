@@ -2,7 +2,7 @@
 *{
   margin: 0px;
   padding: 0px;
-  box-sizing: border-boxc;
+  box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 section#centro {
@@ -12,34 +12,41 @@ section#centro {
 #conteiner{
   display: flex;
   flex-flow: row wrap-reverse;
+  justify-content: space-between;
   padding: 10px;
+  align-items: center;
+  
 
 }
 #conteiner1{
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
 
 }
 .text {
   border: 1px dotted ;
-  flex:  1 500;
   text-align: justify;
   text-indent: 30px;
+  flex: 0 1 50%;
 }
 div.fotoinca{
-  margin: 10px;
+  width: 490px;
+  height: 215px;
   background-image: url('../img/paisagem.jpeg');
   background-size: cover;
-  flex: 1 0 150px;
 
 }
 div#video{
   display:flex;
-  background-color: lightgray;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
 }
 #video > iframe {
   margin: 10px;
-  flex: 1 1 560;
+ 
 }
