@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test grid</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    main {
+      width: 100vw;
+      height: 100vh;
+      background-color: gray;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .conteiner {
+      background-color: crimson;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 200px 100px 100px;
+      grid-gap: 10px;
+
+
+      
+    }
+
+    .Itens {
+      text-align: center;
+      width: 150px;
+      border: 2px dashed burlywood;
+      padding: 25px;
+      background-color: rgb(135, 206, 250);
+
+    }
+    .conteiner1 {
+      background-color: lightgray;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    #grid-teste{
+      padding: 20px 0px;
+      height: 100%;
+
+      background-color: rgb(51, 2, 12);
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 50px 50px 50px;
+      grid-gap: 5px;
+
+
+      .tens {
+        text-align: center;
+        border: 2px dashed burlywood;
+        padding: 10px;
+        background-color: rgb(13, 144, 225);    
+        border-radius: 50%;   
+
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="conteiner">
+      <div class="conteiner1">
+        <div class="Itens" id="grid-teste">
+          <div class="tens">0</div>
+          <div class="tens">1</div>
+          <div class="tens">2</div>
+          <div class="tens">3</div>
+          <div class="tens">4</div>
+          <div class="tens">5</div>
+          <div class="tens">6</div>
+          <div class="tens">7</div>
+          <div class="tens">8</div>
+        </div>
+      </div>
+      <div class="Itens">1</div>
+      <div class="Itens">2</div>
+      <div class="Itens">3</div>
+      <div class="Itens">4</div>
+      <div class="Itens">5</div>
+      <div class="Itens">6</div>
+      <div class="Itens">7</div>
+      <div class="Itens">8</div>
+    </div>
+  </main>
+  
+</body>
+</html>
