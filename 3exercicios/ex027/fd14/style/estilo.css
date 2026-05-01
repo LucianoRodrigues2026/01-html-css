@@ -47,9 +47,11 @@ h1, h2, p {
 }
 
 img {
-    width: 90%;
-    margin: auto;
-  }
+  display: block;
+
+  width: 90%;
+  margin: auto;
+}
 
 
 .text {
@@ -72,11 +74,12 @@ img {
 .text-media{
   background-color: gray;
   flex: 0 1 500px; 
-  margin: auto;
 }
 
 .text-media > iframe {
-   width: 95%;
+  display: block;
+  width: 95%;
+  margin: auto;
    
 }
 
