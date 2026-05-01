@@ -3,11 +3,14 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'arial','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-indent: 10px;
   h1{
     text-align: center;
   }
+}
+::-webkit-scrollbar {
+  width: 0px;
 }
 main {
   width: 100vw;
@@ -15,53 +18,65 @@ main {
 }
 h1, h2, p {
   padding: 10px;
+  line-height: 20px;
   p {
-    text-align: justify;
+    line-height: 30px;
+    text-align: justifyt;
   }
 }
 
-section#centro {
+#centro {
+  display: flex;
+  flex-flow:  column nowrap;
+  align-content: space-between;
   
-  background-color: rgb(155, 155, 156);
+  background-color: rgb(204, 204, 206);
 }
 #conteiner{
+ 
   display: flex;
   flex-flow: row wrap-reverse;
   justify-content: space-between;
   padding: 10px;
-  align-items: center;
-  
-
+  margin: 10px;
 }
+
+.media-text {
+  background-color: rgba(128, 128, 128, 0.152);
+  flex: 1 0 300px;
+}
+
+img {
+    width: 90%;
+    margin: auto;
+  }
+
+
+.text {
+  text-align: justify;
+  text-indent: 30px;
+  flex: 1 0 300px;
+}
+
+
 #conteiner1{
+  
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: space-between;
+  margin: 10px;
   padding: 10px;
 
 }
-.text {
-  border: 1px dotted ;
-  text-align: justify;
-  text-indent: 30px;
-  flex: 0 1 50%;
-}
-div.fotoinca{
-  width: 490px;
-  height: 215px;
-  background-image: url('../img/paisagem.jpeg');
-  background-size: cover;
 
+.text-media{
+  background-color: gray;
+  flex: 0 1 500px; 
+  margin: auto;
 }
-div#video{
-  display:flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
+
+.text-media > iframe {
+   width: 95%;
+   
 }
-#video > iframe {
-  margin: 10px;
- 
-}
+
