@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jaeTec</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    main {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: auto auto;
+
+    }
+    .left {
+      border: 4px dotted blue;
+      width: 50vw;
+      height: 100%;
+      background-color: rgb(219, 131, 22);
+    }
+    .rigt {
+      border: 6px dotted red;
+      width: 50vw;
+      height: 100%;
+      background-color: blueviolet;
+    }
+    @media screen  and (max-width: 620px) {
+      .left {
+        display: none;
+      }
+      .rigt {
+        width: 100vw;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="left">
+    </section>
+    <section class="rigt">
+
+    </section>
+  </main>
+  
+</body>
+</html>
