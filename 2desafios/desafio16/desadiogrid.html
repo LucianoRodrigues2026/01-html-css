@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio-grid</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    ::-webkit-scrollbar {
+      height: 0px;
+      width: 0px;
+    }
+    main {
+      width: 100vw;
+      height: 100vh;
+      background-color: beige;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 150px 50px repeat(5, 1fr) 40px;
+
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(to left, #6420a3, #9c32ff);
+      background-color: blueviolet;
+      grid-area: 1 / 1 / 2 / -1;
+    }
+    nav {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      background-color: rgb(93, 30, 152);
+      grid-area: 2 / 1 / 2 / -1;
+      a {
+        margin-right: 10px;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-size: 1.5em;
+        color: #170824;
+      }
+      a:hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px;
+        border-radius: 10px;    
+        color: #400379;
+        background-color: lightgray;
+        cursor: pointer;
+        font-weight: bolder;
+      }
+    }
+    section.conteudo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: rgb(133, 5, 253);
+      grid-area: 3 / 1 / 8 / -3;
+      p {
+        padding: 10px;
+        text-align: justify;
+        text-indent: 10px;
+      }
+    }
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      background-color: rgb(113, 12, 207);
+      grid-area: 3 / 7 / 8 / 9;
+
+      h1 {
+        padding: 10px;
+      }
+
+    }
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(169, 98, 235);
+      grid-area: 8 / 1 / 9 / 9;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>topo</h1>
+    </header>
+    <nav>
+      <a href="#">home</a>
+      <a href="#">contatos</a>
+      <a href="#">abolt</a>
+      <a href="#">login</a>
+    </nav>
+
+    <section class="conteudo">
+      <h1>principal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem asperiores amet temporibus at facere minus quo dignissimos aperiam tenetur eum nihil, accusantium fugiat delectus blanditiis placeat sed nisi iusto maiores!</p>
+    </section>
+
+    <section>
+      <h1>secundaria/ anuncios</h1>
+    </section>
+
+    <footer>
+      <h1>footer/rodape</h1>
+    </footer>
+  </main>
+</body>
+</html>

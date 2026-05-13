@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grig-laouty</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-variant: small-caps;
+      font-size: 1.2em;
+      font-weight: bolder;
+      color: #ffffff;
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+    
+    .conteiner {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 150px;
+      grid-template-rows: 130px 40px repeat(2, 1fr) 40px;
+    }
+     
+    .topo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(22, 22, 73);
+      grid-area: 1 / 1 / 2 / 3;     
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(39, 39, 241);
+      grid-area: 2 / 1 / 2 / 3; 
+     
+    }
+    .principal {
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(187, 187, 255);
+      grid-area: 3 / 1 / 5 / 2;
+     
+    }
+    .anuncios {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      background-color: rgb(9, 9, 138);
+      grid-area: 3 / 2 / -2 / -2;
+     
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(3, 3, 63);
+      grid-area: 5 / 1 / -1 / -1;
+     
+    }
+  </style>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="topo">topo</div>
+    <div class="menu">menu</div>
+    <div class="principal">principal</div>
+    <div class="anuncios">anuncios</div>
+    <div class="footer">rodape</div>
+  </div>
+  
+</body>
+</html>
